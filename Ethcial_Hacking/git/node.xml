@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>git</string>
+  <key>nodeid</key><string>c1e83dfd-54f2-42dd-adc4-b1897604fb7b</string>
+  <key>modified_time</key><integer>1589600262</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1589600262</integer>
+  <key>order</key><integer>13</integer>
+</dict>
+</node>

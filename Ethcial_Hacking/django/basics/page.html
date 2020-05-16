@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basics</title>
+</head><body><span style="font-size: 12pt"><b>pip install django</b>&nbsp;-&gt; to instal Django on your system<br/>
+<br/>
+<b>python -m django --version</b>&nbsp;-&gt; gives us the version of django installed on our system<br/>
+<br/>
+Django is a web development framework. It is a backend framework.<br/>
+<br/>
+<b>django-admin </b>-&gt; gives django commands, it's a utility&#09;<br/>
+<b>django-admin startproject mysite -&gt;</b>&nbsp;to create a mysite folder. mysite is project name<br/>
+<br/>
+manage.py is utitlity, that helps manage our project<br/>
+__init__.py -&gt; package file<br/>
+settings.py -&gt; contains settings for our project<br/>
+urls.py -&gt; conatins url declarations<br/>
+wsgi.py -&gt; WSGI (Web Server Gateway Interface)<br/>
+<br/>
+<b>python manage.py runserver </b>-&gt; starts development server<br/>
+<br/>
+// inside of the urls.py file<br/>
+<b>from . import views</b>&nbsp;-&gt; to import views file<br/>
+<br/>
+urlpatterns &nbsp;= [<ul><li style="list-style-type: none">path('', views.index, name='index')</li>
+</ul>
+]<br/>
+<br/>
+<br/>
+********** Inside of views.py **********<br/>
+from django.http import HttpResponse &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&gt; importing response<br/>
+<br/>
+def index(request): &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -&gt; request, since we request from browser<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return HttpResponse("Hello") &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-&gt; since it shoud return a http response</span></body></html>

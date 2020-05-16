@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>arrays</title>
+</head><body>Arrays are objects that can hold multiple values or objects.<br/>
+<br/>
+<b>let ar = []; // creating an array<br/>
+<br/>
+<span style="font-size: 12pt">Each value in an array is called an element.<br/>
+<br/>
+</span></b><span style="font-size: 12pt">Another way to create an array:<br/>
+<b>let val = Array.of(1, 2, 3);<br/>
+<br/>
+</b>In arrays, we start counting from 0.<br/>
+<br/>
+<b>Array.isArray(variable); // to check if a variable is an Array or not<br/>
+<br/>
+variable.push('value') // adds or pushes element at end of array, can push more than one values<br/>
+variable.pop() // takes out the element from end of array<br/>
+<br/>
+variable.shift() // shifts an entire array, and removes the element from front of array<br/>
+variable.unshift('value') // adds value to start of the array<br/>
+<br/>
+</b>slice -&gt; used to create a new arrau, based of an original array<br/>
+splice -&gt; is used to insert or delete element from an array at any position.<br/>
+<br/>
+<b>variable.slice(startIndex, endIndex); // slicing an array<br/>
+variable.splice(indexOfElementToStartDeletingFrom, numberOfElementsToDelete);<br/>
+variable.splice(indexOfElementToStartDeletingFrom, numberOfElementsToDelete, 'valueToInsertAfterDeleting');<br/>
+</b></span><br/>
+<span style="font-size: 12pt"><b>variable.indexOf('element') -&gt; gives us the index value of an element, returns -1, if element not present in the array<br/>
+<br/>
+variable.filter(function(item) { // loops through an array, and can be used to check for a condition and return those elements<ul><li style="list-style-type: none">return item; </li>
+</ul>
+})<br/>
+<br/>
+variable.find(function(item) { // similar to filter function, but returns the first find value<ul><li style="list-style-type: none">return item;</li>
+</ul>
+});<br/>
+<br/>
+variable.forEach(function(item) {<ul><li style="list-style-type: none">console.log(item);</li>
+</ul>
+});</b></span></body></html>

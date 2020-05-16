@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basics</title>
+</head><body>we can run c# on top of runtime and framework .NET Core. Also .NET Core SDK(Software Development Kit)<br/>
+<br/>
+2 types of .NET:<br/>
+1. .NET Framework: only for windows.<br/>
+2. .NET Core is open source, and works on Windows, Linux and Mac.<br/>
+<br/>
+.NET is the software that converts our C# code to machine understable language.<br/>
+.NET has 2 main parts:<br/>
+&nbsp; &nbsp; 1. CLR (Common Language Runtime)<br/>
+&nbsp; &nbsp; 2. FCL (Framework Class Library)<br/>
+<br/>
+dotnet -&gt; command line tool<br/>
+<br/>
+dotnet --info -&gt; Provides informationo about .net core version, operating system name, version, platform, base path, etc.<br/>
+<br/>
+ASP.NET -&gt; it is a web programming framework<br/>
+<br/>
+dotnet new console -&gt; to create a new console application project<br/>
+<br/>
+.csproj -&gt; this extension means it is a c# project<br/>
+.cs -&gt; extension for C# files.<br/>
+<br/>
+dotnet run -&gt; to run our c# project.<br/>
+<br/>
+dotnet run --project src/folderName<br/>
+<br/>
+dotnet restore -&gt; command to grab dependies<br/>
+<br/>
+in dotnet, there is a package system called 'nuget', it helps my application get advantage of code that other people have written.<br/>
+<br/>
+dotnet build -&gt; to analyze my code<br/>
+<br/>
+here it happens, that my all project files combine together to form a new binary file after compilation, .dll file.<br/>
+<br/>
+"obj" folder contains temporary files that are created using restore and build<br/>
+dotnet x.dll -&gt; to run dll files.</body></html>

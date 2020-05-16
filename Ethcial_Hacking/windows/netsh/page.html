@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>netsh</title>
+</head><body>Windows have a command line utility called <span style="font-size: 11pt"><b>netsh (Network Shell), </b></span><span style="font-size: 10pt">that allows you to display and moidy network configurations of your system.<br/>
+</span><span style="font-size: 10pt">The most common use of netsh is to reset the TCP/IP stack back to default. Use </span><span style="font-size: 11pt"><b>netsh</b></span><span style="font-size: 10pt">&nbsp;from cmd using administrative privileges.<br/>
+</span><span style="font-size: 10pt"><br/>
+<b>netsh advfirewall reset</b>&nbsp;-&gt; Restores the Windows Firewall with Advanced Security policy to default policy, this command returns all settings to not configured and deletes all connection security and firewall rules.<br/>
+<br/>
+<b>netsh int ip reset </b>-&gt; Removes all user configured IPv4 settings. Restarting of computer is required before the default settings will take effect.<br/>
+<br/>
+</span><b>netsh int ipv6 reset </b>-&gt; Removes all user configured IPv6 settings. Restarting of computer is required before the deafult settings take effect.<br/>
+<br/>
+<b>netsh winsock reset &nbsp;</b>-&gt; Resets Winsock Catalog to a clean state. All Winsock layered Service Providers which were previously installed must be reinstalled. This command does not affect Winsock Name Space Provider entries.</body></html>

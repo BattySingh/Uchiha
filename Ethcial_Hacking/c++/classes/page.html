@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>classes</title>
+</head><body><span style="font-size: 14pt">A class defines the idea of an object, what it can hold and what functions it can be asked to perform.<br/>
+An object is an instance of a class.<br/>
+Functions inside a class are called member functions.<br/>
+</span><br/>
+<span style="font-size: 14pt">A string is a collection of characters.<br/>
+#include &lt;string&gt; -&gt; to use string class<br/>
+<br/>
+for unicode, use wstring<br/>
+<br/>
+string name; -&gt; string is a type, and name is a variable that holds string value.<br/>
+name.length() -&gt; length is a member function and gives us the length of the name.<br/>
+name.find("x") -&gt; returns index of the character if "x" is found in name variable.<br/>
+if "x" is not found, then we get returned 0 or garbage value.<br/>
+<br/>
+name.substr(start substring from where) -&gt; used to create substring out of name variable.<br/>
+<br/>
+getline(cin, name); -&gt; takes complete string until hit enter<br/>
+<br/>
+*************************************************************************************************************<br/>
+<br/>
+Vectors hold a number of values, all of same type. Size does not need to be known in advance. Easy to access a specific item or all of them.<br/>
+<br/>
+#include &lt;vector&gt; -&gt; to use and work with vector<br/>
+#include &lt;algorithm&gt; -&gt; for sorting and counting<br/>
+<br/>
+vector&lt;int&gt; vi; -&gt; declaring a vector of integers called vi.<br/>
+<br/>
+vi.push_back(value) -&gt; a vector method, to insert elements into vector<br/>
+<br/>
+ranged for: for (auto x:vi) {<ul><li style="list-style-type: none">code</li>
+</ul>
+}<br/>
+<br/>
+<b>To add support for g++11, g++14 and g++17, use g++ -std=gnu++17 x.cpp<br/>
+</b><br/>
+vi.size() -&gt; tells us number of elements inside vector of integer<br/>
+<br/>
+vi[1] = 4; -&gt; to access a specific place, and value can be modified<br/>
+</span><br/>
+</body></html>
