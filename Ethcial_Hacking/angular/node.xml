@@ -2,14 +2,14 @@
 <node>
 <version>6</version>
 <dict>
-  <key>title</key><string>git</string>
-  <key>nodeid</key><string>c1e83dfd-54f2-42dd-adc4-b1897604fb7b</string>
-  <key>modified_time</key><integer>1589600262</integer>
+  <key>title</key><string>angular</string>
+  <key>nodeid</key><string>528916b1-0818-43e8-8b18-dd2a4ae740fb</string>
+  <key>modified_time</key><integer>1589636688</integer>
   <key>version</key><integer>6</integer>
   <key>content_type</key><string>application/x-notebook-dir</string>
-  <key>created_time</key><integer>1589600262</integer>
+  <key>created_time</key><integer>1589636688</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>order</key><integer>13</integer>
+  <key>order</key><integer>14</integer>
   <key>info_sort</key><string>order</string>
 </dict>
 </node>

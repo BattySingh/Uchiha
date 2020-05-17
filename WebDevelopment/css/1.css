@@ -1,0 +1,21 @@
+body {
+	background: url('woodGrain.jpg');
+}
+
+li {
+	color: orange;
+}
+
+h1 {
+	border-color: red;
+	border-width: 5px;
+	border-style: solid;
+	color: purple;
+	color: #ff8000;
+	color: rgb(68, 0, 100);
+}
+
+h4 {
+	color: brown;
+	background-color: rgb(255, 100, 80);
+}

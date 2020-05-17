@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Exrecise</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label for="firstName">First Name: </label>
+		<input type="text" id="firstName" required placeholder="John" name="firstName">
+		<label for="lastName">Last Name: </label>
+		<input type="text" id="lastName" required placeholder="Smith" name="lastName"><p></p>
+		Male<input type="radio" name="gender" value="male">
+		Female<input type="radio" name="gender" value="female">
+		Other<input type="radio" name="gender" value="other"><p></p>
+		<label for="email">Email: </label>
+		<input type="email" required id="email" placeholder="your email" name="email">
+		<label for="password">Password: </label>
+		<input type="password" minlength="5" maxlength="10" required id="password" placeholder="your password" name="password"><p></p>
+		Birthday: 
+		<select name="Month">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+			<option>May</option>
+		</select>
+		<select name="Day">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+		<select name="Year">
+			<option>Year</option>
+			<option>2020</option>
+			<option>2019</option>
+			<option>2018</option>
+			<option>2017</option>
+			<option>2016</option>
+		</select><p></p>
+		I agree to the terms and conditions
+		<input type="checkbox" name="agree"><p></p>
+		<input type="submit" name="Submit">
+	</form>
+</body>
+</html>
