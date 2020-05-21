@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>modules</title>
+</head><body>http -&gt; node module to launch a server, and send requests.<br/>
+<br/>
+https -&gt; launch a SSL Server.<br/>
+<br/>
+Creating a NodeJs server:<br/>
+const http = require('http'); // getting the core module into our file<br/>
+const server = http.createServer((req, res) =&gt; {<ul><li style="list-style-type: none">console.log(req); // req or request is an object</li>
+</ul>
+});<br/>
+<br/>
+server.listen(3000); // listen method, listens requests on port 3000<br/>
+<br/>
+Entire Node app uses one single thread.<br/>
+<br/>
+process.exit() -&gt; to quit our server.<br/>
+<br/>
+Headers are meta data added to our requests.<br/>
+<br/>
+req.url -&gt; to get the url<br/>
+req.method<br/>
+req.headers -&gt; to get headers information<br/>
+<br/>
+NodeJs is Event Driven. It responds whenever an event occurs.</body></html>

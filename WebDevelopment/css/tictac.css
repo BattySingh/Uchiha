@@ -1,0 +1,3 @@
+.myTicTacToeDiv { text-align: center; }
+.myTicTacToeDiv > table { margin: 0% auto; }
+.myTicTacToeDiv > table td { width: 100px; height: 100px; }
