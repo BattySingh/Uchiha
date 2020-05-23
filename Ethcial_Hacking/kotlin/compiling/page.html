@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>compiling</title>
+</head><body>Download kotlin compiler into your system, and set path to the executable file.<br/>
+<br/>
+.kt -&gt; extension for the kotlin file.<br/>
+<br/>
+kotlinc x.kt -include-runtime -d x.jar -&gt; compile &nbsp;kotlin file<br/>
+-d option indicates the output path for generated class files which may be a directory or a .jar file.<br/>
+-include-runtime option makes the resulting .jar file self-contained and runnable by including kotlin runtime library in it.<br/>
+<br/>
+kotlinc -help -&gt; to see what options you have available.<br/>
+<br/>
+java -jar x.jar -&gt; to finally run your compiled file.<br/>
+<br/>
+JAR -&gt; Java Archive. It is a file format based on the popular zip file format and is used for aggregating many files into one.<br/>
+<br/>
+If we run kotlin file, kotlinc x.kt -&gt; this creates a .class file<br/>
+javap -c x.class -&gt; gives how a file is working under the hood<br/>
+<br/>
+Kotlin comes with its own standard class library, called "<b>Kotlin runtime</b>".<br/>
+We can use "<b>Joda</b>" library to work with date and time.<br/>
+<br/>
+? -&gt; operator is called "<b>Safe call operator</b>", it avoids the dreadfull NullPointException error.<br/>
+<br/>
+Gradle is a modern open source polyglot build automation system.</body></html>
