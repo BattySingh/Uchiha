@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>arrays</title>
+</head><body>Arrays are created using: val myArr = arrayOf("one", "two", "three");<br/>
+<br/>
+myArr.size -&gt; to get the size of the array<br/>
+myArr[1] -&gt; to access individual array values<br/>
+<br/>
+myArr.get(1) -&gt; works as index, gets the value of element at index1 , index starts from 0.<br/>
+<br/>
+We can mix types inside of array.<br/>
+<br/>
+For loop to iterate all elements in an array,<br/>
+for (num in myArr) {<ul><li style="list-style-type: none">println(num);</li>
+</ul>
+}<br/>
+<br/>
+also used for looping through an array<br/>
+myArr.forEach { -&gt; traverses through an array<ul><li style="list-style-type: none">println(it); -&gt; it is deafult name for elemenst in an array, and prints all elements one by one from array</li>
+</ul>
+}<br/>
+<br/>
+if we want to change variable name "it" to our custom name, use<br/>
+myArr.forEach { item -&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// so we can use item as name for array elements, lambda syntax<ul><li style="list-style-type: none">println(item);</li>
+</ul>
+}<br/>
+<br/>
+myArr.forEachIndexed { index, num -&gt; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// used when to display index as well with the array element<ul><li style="list-style-type: none">// code</li>
+</ul>
+}</body></html>

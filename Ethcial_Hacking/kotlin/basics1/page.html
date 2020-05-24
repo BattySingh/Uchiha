@@ -18,6 +18,17 @@ if (condition) {<br/>
 <br/>
 }<br/>
 <br/>
-<b>Kotlin is a JVM language, and so the compiler will emit Java bytecode</b>. <b>Because of this, Kotlin code can Java code, and vice-versa.</b><br/>
+<b>Kotlin is a JVM language, and so the compiler will emit Java bytecode</b>. <b>Because of this, Kotlin code can Java code, and vice-versa.<br/>
+</b><b><br/>
+</b><b>Packages allow </b>us to split code into namespaces. Any file may being with a package declaration:<br/>
+package com.packt.myproject<br/>
+class Foo<br/>
+fun bar(): String = "bar"<br/>
 <br/>
-</body></html>
+The package name is used to give us the <b>Fully Qualified name (FQN) </b>for a class, object, interface or function. In above example, class <b>Foo </b>&nbsp;has fully qualified name of com.packt.myproject.Foo, top level function <b>bar</b>&nbsp;has fully qualified name of com.packt.myproject.bar.<br/>
+<br/>
+To enable classes, objects, interfaces, and functions to be used outside of the declared package we must import the required class, object, interface, functions.<br/>
+import com.packt.myproject.Foo<br/>
+<br/>
+<b>Wildcard Import</b>: If we have a bunch of imports from the same package, instead of importing each class, function individually, we can import entire package using * operator.<br/>
+Wildcard imports are especially useful when a large number of helper functions or constants are defined at top level, and we wish to refer to those without using the classname.</body></html>
