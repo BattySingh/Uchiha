@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>lists</title>
+</head><body>listOf() -&gt; is used to create a list, and like arrays it can also contain different types of values into it, like string, integers, booleans.<br/>
+<br/>
+Unlike arrays, that on prinltn(arrayName), gives memory location where array is stored, In list, println(listName); gives the whole list.<br/>
+<br/>
+mapOf(); -&gt; is used to create map, which is a key value pair.<br/>
+ex: mapOf(1 to "a", 2 to "b", 3 to "c");<br/>
+<br/>
+Arrays, Lists, Maps are collections.<br/>
+<br/>
+forEachIndexed does not works with Map collections.<br/>
+<br/>
+Collection type in Kotlin is immutable by default.<br/>
+<br/>
+To have mutable list, use -&gt; mutableListOf();<br/>
+<br/>
+listName.add("text"); // to add new elements into our list<br/>
+<br/>
+mutableMapOf();<br/>
+mapName.put(4 to "e"); // to add new key value into maps.<br/>
+<br/>
+Passing collections as parameters to function,<br/>
+fun name( items: List&lt;String&gt; ) {<ul><li style="list-style-type: none">items.forEach { item -&gt;</li>
+<li style="list-style-type: none"><ul><li style="list-style-type: none">println(item);</li>
+</ul>
+</li>
+<li style="list-style-type: none">}</li>
+</ul>
+}</body></html>

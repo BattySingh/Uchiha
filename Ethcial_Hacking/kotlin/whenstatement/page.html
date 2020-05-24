@@ -9,4 +9,29 @@ when is keyword<br/>
 when (condition or expression) {<ul><li style="list-style-type: none">null -&gt; println(); // -&gt; follows what action to take, if null</li>
 <li style="list-style-type: none">else -&gt; run this</li>
 </ul>
-}</body></html>
+}<br/>
+<br/>
+When two different packages each use the same name, then we can use the "<b>as</b>" keyword to alias the name. This is especially useful when common names are used by multiple libraries.<br/>
+<br/>
+import com.packt.myproject.Foo<br/>
+import com.packt.otherproject.Foo as Foo2<br/>
+<br/>
+println("Hello ${5 + 4}"); // brackets can be used want to use expressions.<br/>
+<br/>
+A range is defined as an interval that has a start value and an end value. Any types which are comparable can be used to create a range, which is done using .. operator.<br/>
+val atz = "a".."z"<br/>
+<br/>
+downTo() // will create a range counting down<br/>
+ex: 100.downTo(0)<br/>
+<br/>
+rangeTo() // will create a range up to a value.<br/>
+ex: 10.rangeTo(20)<br/>
+<br/>
+Ranges can be reversed by using reversed() function.<br/>
+while(true) {<ul><li style="list-style-type: none">// run this code</li>
+</ul>
+}<br/>
+<br/>
+setOf() -&gt; to creates sets in kotlin.<br/>
+<br/>
+Arrays has an extension function "<b>indices</b>", which can be used to iterate over the index of an array.</body></html>
