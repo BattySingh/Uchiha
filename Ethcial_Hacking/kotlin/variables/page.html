@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>variables</title>
+</head><body>Kotlin has 2 keywords for declaring variables, <b>val</b>&nbsp;and <b>var</b>.<br/>
+"<b>var</b>" is a mutable variable, which is, a variable that can be changed to another value by reassigning it.<br/>
+var name = "kotlin";<br/>
+<br/>
+or var can be initialized later,<br/>
+var name:String;<br/>
+name = "Kotlin";<br/>
+<br/>
+The keyword "<b>val</b>" is used to declare a read-only variable. This is equivalent to declaring a final variable in Java. A val must be initialized when created, since it cannot be changed later.<br/>
+<br/>
+Even though Kotlin is a <b>strongly--typed language, </b>we do not always need to declare types explicitly.<br/>
+The compiler attempts to figure out the type of an expression from the information included in the expression. This mechanism is called <b>type inference.</b><br/>
+<br/>
+In Kotlin, everything is an Object.<br/>
+Boxing is the conversion from a primitive type to a wrapper type that types place whenever an object is required but a primitive is presented.<br/>
+<b>Two different values that are boxed might not use the same instance, so referential equality is not guaranteed on boxed values.</b><br/>
+<br/>
+Built-in number types in Kotlin:<br/>
+1.) Long -&gt; 64 (width)<br/>
+2.) Int -&gt; 32<br/>
+3.) Short -&gt; 16<br/>
+4.) Byte -&gt; 8<br/>
+5.) Double -&gt; 64<br/>
+6.) Float -&gt; 32<br/>
+<br/>
+To create number literals, val int = 123;<br/>
+long value requires the suffix L, and a float requires a suffix F. double is used &nbsp;as the default for floating point numbers, and int for integral numbers. The hexadecimal and binary use prefixes 0x and 0b respectively.<br/>
+<br/>
+Kotlin does not support automatic widening of numbers, so conversion must be invoked explicitly.<br/>
+ex; val int = 123;<br/>
+val long &nbsp;= int.toLong(); -&gt; to convert int to a long value<br/>
+<br/>
+val float = 32.34f;<br/>
+val double = float.toDouble(); -&gt; to covert to double<br/>
+<br/>
+Function for conversions: toByte(), toShort(), toInt(), toLong(), toFloat(), toDouble(), toChar().<br/>
+<br/>
+The usual bitwise operators are not supported in Kotlin, like left shift, right shift, these are not in-built operators in Kotlin, but named functions instead but can still be invoked like operators.<br/>
+inverse is not a binary operator, but a unary operator and so is invoked by dot syntax on a number.<br/>
+<br/>
+val leftshift = 1 sh 2;<br/>
+val rightshift = 1 sh 2;<br/>
+val unsignedRightShift = 1 ushr 2;<br/>
+val and = 1 and 0x00001111;<br/>
+val or = 1 or 0x00001111;<br/>
+val xor = 1 xor 0x00001111;<br/>
+val inv = 1.inv();<br/>
+<br/>
+Chars represent a single character. Chars also support escaping for characters: \t, \b, \n, \r, ', ", \\, \$.<br/>
+All unicode characters can be represented using the unicode number, ex: \u1234. char type is not treated as number as in Java.<br/>
+<br/>
+Strings: Jus like in Java, Strings are immutable. Strings can be created using double quotes or triple quotes.<br/>
+Double quotes create an escaped string. In the escaped string, special characters, such as new line, must be escaped. val string = "string with \n new line";<br/>
+Triple quotes create raw strings, in a raw string no escaping is necessary, and all characters can be included.<br/>
+<br/>
+In Kotlin, we can create an array using function arrayOf().<br/>
+val array = arrayOf(1, 2, 3, 4);<br/>
+<br/>
+We can create an Array from an initial size and a function, which is used to generate each element, val perfectSquares = Array(10, {k -&gt; k * k});<br/>
+<br/>
+Unlike Java, arrays are not treated as special by the language, and are regular collection classes. Instances of arrays provide an iterator function and a size function, as well as get and set function.<br/>
+Classes: ByteArray, CharArray, ShortArray, IntArray, LongArray, BooleanArray, FloatArray, DoubleArray. These allows performace critical code to use arrays as effectively as they could.<br/>
+<br/>
+Comments:<br/>
+1.) Block comments: /* */<br/>
+2.) Line comments //</body></html>

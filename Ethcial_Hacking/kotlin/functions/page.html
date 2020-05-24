@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>functions</title>
+</head><body>fun -&gt; keyword to create functions.<br/>
+fun functionName(parameters) {<ul><li style="list-style-type: none">// code</li>
+</ul>
+}<br/>
+<br/>
+fun functionName(): String { // String is a return type<ul><li style="list-style-type: none">return "hello"; // return is a keyword</li>
+</ul>
+}<br/>
+<br/>
+To call the function, we use println(functionName()); // because we are returning from function<br/>
+<br/>
+fun name(): Unit { // Unit in kotlin, is the absence of any useful type, it means returned is not useful, or say we do not want to return anything.<br/>
+<br/>
+}<br/>
+<br/>
+fun returnNull: String? {<ul><li style="list-style-type: none">return null; // to return null, use ? operator</li>
+</ul>
+}<br/>
+<br/>
+Functions support type inference as well.<br/>
+<br/>
+fun greeting(): String = "greeting"; -&gt; called single expression function. Because entire defnition of function is in single expression.<br/>
+<br/>
+fun name(parameterName: String) { // with parameter type<ul><li style="list-style-type: none">println(myName);</li>
+</ul>
+}<br/>
+<br/>
+"Hello $varibaleName" -&gt; String template<br/>
+<br/>
+Functions outside of any class or functions are callled top level functions or free functions.</body></html>
