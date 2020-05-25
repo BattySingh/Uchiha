@@ -1,4 +1,4 @@
-// Program to display digits of a number
+// Program to reverse a number
 
 #include <iostream>
 #include <stdlib.h>
@@ -6,26 +6,17 @@ using namespace std;
 
 int main() {
     system("cls");
-    int num, res = 0, rem = 0;
+    int num, newNum = 0, res = 0, rem = 0;
     cout << "Enter a number: ";
     cin >> num;
-    int count = 0;
     int temp = num;
 
     while (temp != 0) {
         rem = temp % 10;
         res = temp / 10;
         temp = res;
-        count++;
+        newNum = (newNum * 10) + rem;
     }
-
-    temp = num;
-    while (count > 0) {
-        rem = temp % 10;
-        res = temp / 10;
-        temp = res;
-        cout << rem << endl;
-        count--;
-    }
+    cout << "New reversed number is: " << newNum << endl;
     return 0;
 }

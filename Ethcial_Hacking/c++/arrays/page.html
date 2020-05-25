@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>arrays</title>
+</head><body>int myArr[5] = {1, 2, 3, 4, 5}; // declaring and assigning values inside of an array<br/>
+<br/>
+int newAr[] = {1, 2, 3}; // if we do not specify size, the size of array becomes equal to the number of elements<br/>
+<br/>
+for (a:newAr) { // to loop through all elements in an array. It is a range based for loop<ul><li style="list-style-type: none">cout &lt;&lt; a;</li>
+</ul>
+}<br/>
+<br/>
+For each loop is used with a collection of elements.<br/>
+<br/>
+for (int x : newAr ) { // for each x in newAr, for each loop, x is different variable, and it gets copy of element, it is not holding original value<br/>
+<br/>
+}<br/>
+<br/>
+for (int &amp;x : newAr) { // &amp; is reference, used when we need to change value in the array using for each loop<ul><li style="list-style-type: none">x++;</li>
+</ul>
+}<br/>
+<br/>
+auto -&gt; keyword, if we do not know data type, automatically compiler will give type to variable according to value</body></html>
