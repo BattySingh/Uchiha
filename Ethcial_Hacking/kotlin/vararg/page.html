@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>vararg</title>
+</head><body>vararg -&gt; variable argument<br/>
+<br/>
+fun x(vararg ar:String) {<ul><li style="list-style-type: none">ar.forEach { a -&gt; </li>
+<li style="list-style-type: none"><ul><li style="list-style-type: none">print(a);</li>
+</ul>
+</li>
+<li style="list-style-type: none">}</li>
+</ul>
+}<br/>
+<br/>
+fun main() {<ul><li style="list-style-type: none">val myAr = arrayOf('hello', 'test', 'developer');</li>
+<li style="list-style-type: none">x(*myAr); &#09;&#09;&#09;// * is spread operator used with array name, so it could be used with vararg</li>
+</ul>
+}</body></html>
