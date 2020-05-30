@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>functionOverloading</title>
+</head><body>Function Overloading is that we can write different functions with same name, but with different argument list.<br/>
+<br/>
+<b>Function Template</b>: Functions that are Generic. Meaning functions which are generalized.<br/>
+<br/>
+template &lt;class T&gt; &#09;&#09;// definition of template T. it is defined as T of class template. T is a template class<br/>
+<br/>
+T max(T x, T y) { &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // here T is template, now this function works for both int and float, and we have to write only this template function once, not different for each int and float<ul><li style="list-style-type: none">if (x &gt; y) return x;</li>
+<li style="list-style-type: none">else return y;</li>
+</ul>
+}<br/>
+<br/>
+When using template function, make sure you add type with the function name<br/>
+max&lt;type&gt;(a, b);<br/>
+<br/>
+ex: max&lt;int&gt;(3, 2);<br/>
+max&lt;float&gt;(3.2, 3.2);</body></html>

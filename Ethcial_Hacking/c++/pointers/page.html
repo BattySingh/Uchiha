@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>pointers</title>
+</head><body>Ponters are a type of variables in C++.<br/>
+A pointer is a variable that is used to store the address of the data.<br/>
+<br/>
+2 types of variables: <br/>
+a.) Data variables: Used to store data of the variable<br/>
+b.) Address variables: Used to store address of the data<br/>
+<br/>
+int *p;&#09;&#09;&#09;&#09; // * is used to differentiate between data and address variables. declaration<br/>
+p = &amp;x; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // &amp; tells, store addess of data in variable x into p, initialization<br/>
+<br/>
+*p -&gt; is called de-referencing, meaning going to address and taking the data<br/>
+<br/>
+When program is executing, memory is didvided into 3 sections: <b>Heap, stack, code section<br/>
+</b>Pointers help access the heap area, normally program cannot. Pointers help access heap indirectly.<br/>
+<br/>
+Files on a computer, network connection, keyboard and mouse, printers are acces via pointers.<br/>
+<br/>
+Heap memory is accessed dynamically. When we want to allocate memory in heap, we allocate it using arrays.<br/>
+int a[3] = {1, 2, 3};<br/>
+int *p;<br/>
+p = new int[3]; -&gt; new is used to create array inside heap. When you say new, you get address in heap<br/>
+Heap memory is not deleted automatically, it remains there as long as program is running.<br/>
+<br/>
+delete []p; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// deallocating memory in heap. deleting array p in heap<br/>
+p = NULL; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // making pointer as null, instead use nullptr<br/>
+If youo do not free memory, it is called memory leak.</body></html>
