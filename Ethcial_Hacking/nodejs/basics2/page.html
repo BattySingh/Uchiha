@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basics2</title>
+</head><body>const http = require('http');&#09;&#09;&#09;// here we are including the http module into our application<br/>
+<br/>
+createServer() &#09;&#09;&#09;// method of http creates a new HTTP serverand returns it.The server is set to listen on specific port and hostname. When server is ready, callback function is called.<br/>
+When a new request is received, the request event is called, provding 2 objects: a request (http.IncomingMessage) and a response (http.ServerResponse). These two objects are essential to handle HTTP call. The first gives request details. The second is used to return data to the caller.<br/>
+<br/>
+res.statusCode = 200; &#09;&#09;&#09;&#09;// we set statusCode property to 200, to indicate a successful response.<br/>
+res.setHeader('Conten-type', 'text/plain');&#09;// we set the content-type header<br/>
+res.end('Hello world');&#09;&#09;&#09;&#09;&#09;// we close the response, adding the content as an argument to end().<br/>
+<br/>
+<br/>
+Node.js is a low-level platform, thousands of libraries are built on node.js to make things exciting.<br/>
+<br/>
+Some Node.js frameworks: AdonisJs, Express, Fastify, hapi, koa, loopback.io, meteor, &nbsp;Micro, NestJs, Next.js, Nx, socket.io.<br/>
+<br/>
+V8 provides the runtime environment in which Javascript executes.<br/>
+<br/>
+Javascript is considered an interpreted language, but modern javascript engines no longer just interpret Javascript, but also compile it.<br/>
+Javascript is internally compiled by V8 engine with Just-In-Time (JIT) compilation to speed up the execution.<br/>
+<br/>
+<b>process </b>module provides a handy method that allows you to programmatically exit the Node.js program: process.exit(). When Node.js runs this line, the process is immediately forced to terminate. So, any request sent, callback that's pending, filesystem access, is all going to be terminated.<br/>
+By default, exit code is 0, that means success.<br/>
+<br/>
+You can also set process.exitCode peoperty = 1. With this, the program will end when all the processing has been done.<br/>
+process module does not require require, it is already present.<br/>
+<br/>
+Signals are a POSIX intercommunication system: a notification sent to a process in order to notify it of an event that occured.<br/>
+SIGKILL is the signal that tells a process to immediately terminate, and act like process.exit().<br/>
+process.kill(process.pid, 'SIGTERM');<br/>
+<br/>
+process module provides <b>env </b>property which hosts all the environment variables that were set at the moment the process was started.<br/>
+process.env.NODE_ENV -&gt; to check for node environment<br/>
+<br/>
+node // enter, opens REPL.<br/>
+<br/>
+Node.js has global object.</body></html>

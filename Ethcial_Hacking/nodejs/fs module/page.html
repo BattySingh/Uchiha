@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>fs module</title>
+</head><body>Node.js file system module allows you to work with the file system on your computer.<br/>
+<br/>
+fs ( File System )<br/>
+<br/>
+var fs = require('fs');&#09;&#09;&#09;&#09;// to include the file system into your application<br/>
+<br/>
+File system module can be used to : read files, create files, update files, delete files, rename files.<br/>
+<br/>
+fs.readFile(); &#09;&#09;&#09;&#09;&#09;// is used to read files from your computer<br/>
+<br/>
+ex: It is non-blocking way to read from a file<br/>
+const fs = require('fs');<br/>
+fs.readFile('fileName', 'utf-8', (err, data) =&gt; {&#09;&#09;&#09;// utf-8 is encoding of the file, it is important, if you do not add it, you will be displayed with a raw buffer<ul><li style="list-style-type: none">if (err) throw err;&#09;&#09;&#09;&#09;// if error is there in the file</li>
+<li style="list-style-type: none">console.log(data); &#09;&#09;&#09;&#09;// displays the contents of the file</li>
+</ul>
+});<br/>
+<br/>
+<br/>
+Blocking way: <br/>
+const data = fs.fileReadSync('fileName', 'utf-8');<br/>
+console.log(data);<br/>
+<br/>
+console.clear(); &#09;&#09;&#09;// clears the screen</body></html>
