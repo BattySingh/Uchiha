@@ -2,14 +2,14 @@
 <node>
 <version>6</version>
 <dict>
-  <key>title</key><string>arrayMethods</string>
-  <key>nodeid</key><string>a391cbf2-9f6c-4302-aa51-8dc6de239512</string>
-  <key>modified_time</key><integer>1590889183</integer>
+  <key>title</key><string>functions1</string>
+  <key>nodeid</key><string>36fc503a-a004-41a0-838e-b9512ed35a7c</string>
+  <key>modified_time</key><integer>1590977172</integer>
   <key>version</key><integer>6</integer>
   <key>content_type</key><string>text/xhtml+xml</string>
-  <key>created_time</key><integer>1590887104</integer>
+  <key>created_time</key><integer>1590974310</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>order</key><integer>8</integer>
+  <key>order</key><integer>5</integer>
   <key>info_sort</key><string>order</string>
 </dict>
 </node>
