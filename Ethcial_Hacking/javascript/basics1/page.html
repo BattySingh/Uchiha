@@ -17,4 +17,12 @@ Numeric data type handles numbers.<br/>
 String data type consists of letters and other characters.<br/>
 Boolean data type can have one of two values: true, false.<br/>
 <br/>
-In Javascript, you do not need to specify what type of data will be stored in the variable.</body></html>
+In Javascript, you do not need to specify what type of data will be stored in the variable.<br/>
+<br/>
+<br/>
+Our code &nbsp;-&gt; (enterss the javascript engine, in there), Parser (checks the javascript syntax and converts the code to [<b>Abstract Syntax Tree</b>]) -&gt; (which when passes through process) Convert to Machine Code -&gt; [<b>here our code is Machine code</b>] and our code runs.<br/>
+<br/>
+<br/>
+Each code in Javascript is to be run in an Environment, and this environment is called <b>Execution Context </b>(a box, or container, or a wrapper which stores variables and in which a piece of our code is evaluated and executed).<br/>
+The default context is the <b>Global Execution Context</b>. (the code is not inside any function, and it is associated with global object. In browser, it is the window object.)<br/>
+Each function gets it's own new Execution Context. Execution Context gets removed as functions finish executing.</body></html>

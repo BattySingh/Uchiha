@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basics1</title>
+</head><body>Powershell is a Management Engine.<br/>
+It is a dll basically.<br/>
+It is built on .NET framework.<br/>
+Hosted by an application.<br/>
+<br/>
+One is terminal console (available everywhere), and second is Graphical Console ( called Powershell ISE (Integrated Scripting Editor), it is by default installed on Windows but not on Windows server )<br/>
+<br/>
+<b>$psversiontable</b>&nbsp;-&gt; gives us the information about powersehll, like it's version number, edition, serialization version.<br/>
+<br/>
+<b>exit </b>-&gt; to get or quit the powershell<br/>
+<br/>
+<b>ise</b>&nbsp;-&gt; opens up powershell ise from powershell<br/>
+<br/>
+powershell -&gt; in cmd opens the powershell inside of the cmd window<br/>
+<br/>
+To get help in powershell: <b>help commandName<br/>
+</b><b>ex: help get-service</b>&nbsp;-&gt; gives us few detail on how to get help on using with the command<br/>
+<br/>
+<b>update-help</b>&nbsp;-&gt; downloads help files into your system from internet. The help files are stored in system32, therefore you need to have elevated priveleges, administrator powershell.<br/>
+Updates the documentation<br/>
+<br/>
+update-help -force -&gt; -force is used to tell powershell, download it again completely.<br/>
+<br/>
+<b>get-service -name bits, lanmanserver</b>&nbsp;-&gt; to get names of services, to check if they are running or not<br/>
+<br/>
+get-service bits, winrm -computername computreNameHere -&gt; to check for that computer<br/>
+<br/>
+cls<br/>
+clear -&gt; both clear the screens<br/>
+<br/>
+help get-service -examples // to get only examples<br/>
+<br/>
+help get-eventlog -parameter logname -&gt; narrowing search on what to find<br/>
+<br/>
+help get-service -online -&gt; opens help documentation online<br/>
+help get-service -showwindow -&gt; opens help in a window outside console<br/>
+<br/>
+help *service* -&gt; using wildcards<br/>
+<br/>
+help about* -&gt; gives us about pages, you won't get these until you update help</body></html>

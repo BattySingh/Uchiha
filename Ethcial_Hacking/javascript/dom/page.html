@@ -13,4 +13,16 @@ document.getElementByClassName('className') // to target element based in class 
 <br/>
 d-none -&gt; it is a bootstrap class, stands for 'Display None'.<br/>
 <br/>
-Javascript is backwards compatible with it's earlier versions.</b></span></body></html>
+Javascript is backwards compatible with it's earlier versions.<br/>
+<br/>
+</b>Document object is created by the browser and models the HTML page.<br/>
+document.URL &#09;&#09;// gives the url of current page<br/>
+<br/>
+</span>document.querySelector('p');&#09;&#09;&#09;// only selects the first p tag, and igonores all other p tags<br/>
+document.querySelector('.className');&#09;// to target a class name element<br/>
+document.querySelector('div.test');&#09;&#09;// to target div with className<br/>
+<br/>
+document.querySelectorAll('p');&#09;&#09;&#09;// to target all p tags, not just first element, gives nodeList, so dot notation could be used to get elements, forEach method could be used<br/>
+document.getElementById('idName');&#09;&#09;// to target elements by id<br/>
+document.getElementsByClassName('className'); &#09;&#09;to target using class names, gives HTML collection, cannot use forEach method in this<br/>
+document.getElementsByTagName('p');&#09;&#09;&#09;&#09;to target elements using tags, it also gives an HTML collection</body></html>

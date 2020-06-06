@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basics3</title>
+</head><body>Powershell is an execution engine, that provides the ability for you to interface with your environment using different tools.<br/>
+<br/>
+Powershell core is newer version of powershell, that helps run powershell commands on different environments.<br/>
+Windows powershell only runs on Windows, and is feature complete.<br/>
+It is the Powershell Core that runs on all Operating systems, like windows, linux and Mac. It is open-source.<br/>
+<br/>
+Why use platform? Because: 1.) It is baked into Windows 2.) Automate tasks 3.) Everything under the hood uses powershell, so take more control.<br/>
+<br/>
+Active Directory is a directory service developed by Microsoft for Windows Domain networks.<br/>
+<br/>
+get-service &#09;&#09;// command gives us all the services on our system, running and stopped<br/>
+get-service | &#09;&#09;// | is a pipe, and when hit enter, cmd waits for us to enter a command<br/>
+where-Object Status -eq 'Stopped' | &#09;&#09;// where-object is used to get a more specific, of what kind of resulting service we need, like here we ask to display all stopped services.<br/>
+select-object Name, Status&#09;&#09;// to display only name and status of stopped services<br/>
+<br/>
+$data = get-service | where-object status -eq 'stopped' | select-object name, status&#09;&#09;// here we are storing result inside $data variable<br/>
+<br/>
+Now, we can use this variable to create a .csv file and store result inside it.<br/>
+$data | out-file .\ex.csv&#09;&#09;&#09;// stores the result of $data into a csv file<br/>
+<br/>
+$data | export-csv .\ex1.csv&#09;&#09;// this will format each column into it's new column in excel, separating the values by quotes and commas<br/>
+get-content .\ex1.csv &#09;&#09;&#09;// to view the content of file inside the console.<br/>
+<br/>
+(get-command).count &#09;&#09;&#09;// gives us the count of commands available inside our powershell<br/>
+<br/>
+RSAT : Remote Server Administration Tools, it is used to manage Windows server using our windows 10<br/>
+get-command -name *DHCP*&#09;&#09;// get-command lists all the commands that we are looking to find out</body></html>

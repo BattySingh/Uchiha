@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>basics2</title>
+</head><body>get-service -&gt; to display all the services on our system<br/>
+get-service serviceName -&gt; to check about that service<br/>
+<br/>
+stop-service serviceName -&gt; to stop any service<br/>
+start-service serviceName -&gt; to any service<br/>
+<br/>
+get-eventlog -&gt; when you hit enter, at log name, type system and enter. It gives you all system log details<br/>
+get-eventlog system -newest 5 -&gt; to get top 5 newest entries<br/>
+<br/>
+help get-command -&gt; get-command gets you all the commands<br/>
+<br/>
+get-command -Noun *process<br/>
+get-command -Verb restart<br/>
+<br/>
+ps<br/>
+get-process -&gt; displays all the process, ps is alias<br/>
+get-alias -&gt; displays all alias in the system<br/>
+gci -&gt; get-child-item, alias is ls, dir<br/>
+<br/>
+show-command get-service -&gt; displays command in a window pop up<br/>
+<br/>
+get-psdrive -&gt; to display all the drives on your system<br/>
+<br/>
+$env:windir -&gt; to get value of windir variable<br/>
+<br/>
+WMI, CIM, DSC (desired state configuration), powershell remoting, scripting</body></html>

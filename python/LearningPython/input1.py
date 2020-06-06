@@ -1,0 +1,5 @@
+name = input("Enter your name: ")
+print(name)
+print("***********************")
+print(f"Hello, { name.title() }, it's nice to meet you")
+print("***********************")

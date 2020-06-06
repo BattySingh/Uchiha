@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>routerConfig</title>
+</head><body>en&#09;&#09;&#09;// to enable<br/>
+config t&#09;&#09;// to configure terminal<br/>
+hostname r1&#09;// to give router a name<br/>
+int f0/0&#09;&#09;// if interface connected is fast ethernet, it could be giga ethernet, so use g0/0<br/>
+ip address 192.168.1.254 255.255.255.0<br/>
+no shut&#09;&#09;// to turn the router on<br/>
+Ctrl+z<br/>
+show ip int brief&#09;&#09;&#09;// to display the router configures<br/>
+<br/>
+for switch:<br/>
+en<br/>
+config t<br/>
+hostname sw1<br/>
+int vlan 1&#09;&#09;&#09;// &nbsp;selecting the interface vlan 1<br/>
+ip address 192.168.1.253 255.255.255.0<br/>
+no shut<br/>
+exit<br/>
+ip default-gateway 192.168.1.254<br/>
+ctrl+z<br/>
+sh run&#09;&#09;&#09;// show run</body></html>

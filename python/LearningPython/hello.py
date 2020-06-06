@@ -1,0 +1,5 @@
+print("Hello World!")
+print("This is inside the double quotes")
+print()
+print()
+print('This is the string inside of the single quotes')

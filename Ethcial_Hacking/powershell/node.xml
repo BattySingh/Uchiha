@@ -3,14 +3,14 @@
 <version>6</version>
 <dict>
   <key>expanded</key><false/>
-  <key>title</key><string>javascript</string>
-  <key>nodeid</key><string>f66d015d-febb-4095-b5c5-ca89f5493e24</string>
-  <key>modified_time</key><integer>1586674370</integer>
+  <key>title</key><string>powershell</string>
+  <key>nodeid</key><string>9b1eefa4-bf6b-4c7f-839e-1bf87bf5113e</string>
+  <key>modified_time</key><integer>1590987278</integer>
   <key>version</key><integer>6</integer>
   <key>content_type</key><string>application/x-notebook-dir</string>
-  <key>created_time</key><integer>1586674370</integer>
+  <key>created_time</key><integer>1590987278</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>order</key><integer>3</integer>
+  <key>order</key><integer>18</integer>
   <key>info_sort</key><string>order</string>
 </dict>
 </node>
